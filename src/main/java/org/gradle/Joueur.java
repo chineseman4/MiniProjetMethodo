@@ -1,3 +1,4 @@
+package org.gradle;
 
 public class Joueur {
 
@@ -26,11 +27,11 @@ public class Joueur {
 		this.score = score;
 	}
 
-	public void setJoueur(String joueur ) {
+	public void setJoueur(String joueur) {
 		this.joueur = joueur;
 	}
 	
-	public String toString() {
+	public String infos() {
 		return this.joueur + ", " + this.score +" points.";
 	}
 }

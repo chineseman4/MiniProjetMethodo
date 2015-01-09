@@ -1,3 +1,5 @@
+package org.gradle;
+
 public class QuestionBis {
 
 	private String question;
