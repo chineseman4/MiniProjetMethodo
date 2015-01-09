@@ -13,18 +13,9 @@ public class Joueur {
 		setJoueur("Joueur 1");
 		setScore(0);
 	}
-	
-	public void afficheJoueur(){
-		System.out.println("Vous etes le joueur "+ this.joueur);
-		System.out.println("Votre score est de "+ this.score);
-	}
 
 	public String getJoueur() {
 		return joueur;
-	}
-
-	public void setJoueur(String joueur) {
-		this.joueur = joueur;
 	}
 
 	public int getScore() {
@@ -33,5 +24,13 @@ public class Joueur {
 
 	public void setScore(int score) {
 		this.score = score;
+	}
+
+	public void setJoueur(String joueur ) {
+		this.joueur = joueur;
+	}
+	
+	public String toString() {
+		return this.joueur + ", " + this.score +" points.";
 	}
 }
